@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autoclipz1 — Automated Short-Video Publisher</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #0d0d1a; color: #f0f0f0; line-height: 1.7; }
+    header { background: linear-gradient(135deg, #3d0066, #ff6b00); padding: 60px 24px; text-align: center; }
+    header h1 { font-size: 2.8rem; font-weight: 800; letter-spacing: -1px; }
+    header p { font-size: 1.15rem; margin-top: 12px; opacity: 0.9; }
+    main { max-width: 860px; margin: 0 auto; padding: 48px 24px; }
+    h2 { font-size: 1.5rem; font-weight: 700; margin: 40px 0 12px; color: #ff6b00; }
+    p { margin-bottom: 16px; color: #ccc; }
+    ul { padding-left: 20px; margin-bottom: 16px; color: #ccc; }
+    ul li { margin-bottom: 8px; }
+    .steps { counter-reset: step; list-style: none; padding: 0; }
+    .steps li { counter-increment: step; padding: 12px 16px 12px 56px; position: relative; background: #1a1a2e; border-radius: 8px; margin-bottom: 12px; }
+    .steps li::before { content: counter(step); position: absolute; left: 16px; top: 12px; background: #ff6b00; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; }
+    footer { background: #0a0a14; text-align: center; padding: 32px 24px; font-size: 0.85rem; color: #666; }
+    footer a { color: #ff6b00; text-decoration: none; margin: 0 8px; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Autoclipz1</h1>
+    <p>Automated short-video publisher for TikTok creators</p>
+  </header>
+  <main>
+    <h2>What Autoclipz1 does</h2>
+    <p>Autoclipz1 is a personal automation tool that helps creators prepare and publish short videos to TikTok. Users connect their own TikTok account via TikTok’s official OAuth flow, upload or select their own video clips, add auto-generated subtitles, preview the final result, and explicitly approve each post before it is published to TikTok through the official Content Posting API.</p>
+    <p>Autoclipz1 does not access, store, or republish content that belongs to other creators. Every video must be owned by — or licensed to — the user who uploads it.</p>
+
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><strong>Connect your TikTok account</strong> — Authorise Autoclipz1 via TikTok’s official login. You can revoke access at any time from your TikTok settings.</li>
+      <li><strong>Upload your clip</strong> — Choose a video from your own library. Only MP4 files you own or have rights to use are supported.</li>
+      <li><strong>Add subtitles</strong> — Autoclipz1 uses AI transcription to generate animated, word-level subtitles automatically. You can review and edit them before proceeding.</li>
+      <li><strong>Preview &amp; approve</strong> — Watch the finished clip in a 9×16 preview. Adjust the caption style, position, and post details (title, privacy level, etc.).</li>
+      <li><strong>Publish</strong> — Confirm publication. Autoclipz1 sends the video to TikTok via the official Content Posting API only after your explicit approval.</li>
+    </ol>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Automatic subtitle generation with word-level animation (Hormozi, MrBeast, Karaoke, Minimal, Bounce, Classic styles)</li>
+      <li>Vertical 9:16 crop and formatting optimised for TikTok</li>
+      <li>Preview before publish — you always see the final video before it goes live</li>
+      <li>Privacy controls: choose Public, Friends, or Private before posting</li>
+      <li>100% local processing — your videos are not stored on third-party servers</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>For questions, support, or data deletion requests, contact the developer:</p>
+    <p><strong>Marco Lucia</strong><br />
+    Email: <a href="mailto:marcolucia247@gmail.com">marcolucia247@gmail.com</a></p>
+  </main>
+  <footer>
+    <a href="/autoclipz1/terms/">Terms of Service</a>
+    <a href="/autoclipz1/privacy/">Privacy Policy</a>
+    <br /><br />
+    &copy; 2026 Marco Lucia. All rights reserved.
+  </footer>
+</body>
+</html>
